@@ -1,0 +1,144 @@
+.lProfileCard {
+width: 100%;
+/* background-color: #254150; */
+font-size: 12px;  
+color:rgb(254, 249, 206);
+display: flex;
+flex-direction: column;
+border-radius: 0.2em;
+background-color: rgb(227, 45, 56,0.5);
+}
+.lpcHeader {
+  position:relative;
+  background-color: #E32D38;
+}
+.lpcProfile {
+  position:absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -46px;
+  margin-left: -46px;
+  border-radius: 5em;
+  width: 85px;
+  height:85px;
+  border:solid 4px white;
+  background-color:gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.lpcProfile img {
+  height: 100%;
+}
+.lpcProfileShadow {
+  position:absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -46px;
+  margin-left: -46px;
+  border-radius: 5em;
+  width: 85px;
+  height:85px;
+  transition: background-color 0.2s;
+}
+
+.lpcType, .lpcFlag {
+  height: 50px;
+}
+.lpcType {
+  padding-left: 10px;
+  padding-top: 10px;
+  text-align: left;
+}
+.lpcFlag {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  padding-right: 12px;
+  font-size: 38px;  
+}
+.lpcFlag + div {
+  height: 60px;
+  background-color:rgb(226, 85, 95);
+  background-image: url('spiral.svg');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lpcTitle {
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  font-size: 13px;
+}
+.lpcTitle > div {
+  width: 50%;
+}
+.lpcName{
+  text-align: left;
+}
+.lpcName + div {
+  text-align: right;
+}
+.lpcTotal {
+  /* color: #92D1D3; */
+  margin-right: 10px;
+}
+.lpcElements {
+ /* background-color: #254150 */
+}
+.lpcElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 5px;
+  color: #92D1D3;
+  color: black; 
+}
+.lpcRanking {
+  padding-left:10px ;
+  margin-right:25px ;
+  font-size: 13px;
+}
+.lpcRanking + div{
+  margin-right: 25px;
+}
+.lpcRanking + div img {
+  width: 23px;
+}
+.lpcRanking + div +div   {
+  width: 100%;
+  text-align: justify;
+} 
+.lpcRanking + div +div +div {
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+.lpcMore {
+  color: white;
+  border:solid 1px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 11px;
+  margin-top: 15px;
+  border-radius: 0.3em;
+  transition: background-color 0.2s;
+}
+
+/* on hover */
+.lpcProfileShadow:hover {
+  background-color: rgba(50,50,50, 0.4);
+  cursor: pointer;
+}
+.lpcMore:hover {
+  /* background-color: #92D1D3; */
+  background-color: #E32D38;
+  color: white;
+  border-color: #E32D38;
+  cursor: pointer;
+}

@@ -1,0 +1,189 @@
+.lNavBar {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top:0px;
+  width: 100%;
+  flex-direction: column;
+}
+.navCollapse {
+  display: flex;
+  width: 100%;
+  color:white;
+  background-color: rgb(36, 39, 41);
+  padding-left: 10px;
+  padding-right: 10px;;
+}
+.navLeftElment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  width: 46%;
+}
+.navLeftElment > div {
+  width:25%;
+  padding-right: 7px;
+}
+.navLogo {
+  width: 8%;
+  box-sizing: border-box;
+  background-color: white;
+  border-left: solid 0.4em rgb(36, 39, 41);
+  border-right: solid 0.4em rgb(36, 39, 41);
+}
+.navLogo img{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-top: 3px;
+  margin-left: -25px;
+  width: 50px;
+}
+.navR {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: flex;
+  width: 46%;
+}
+.navR > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.navRemains {
+  display: none;
+}
+.navDropDown {
+  display: none;
+}
+
+/* white navbar management ***************/
+.lnavWhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  font-size: 14px;
+  color:rgb(36, 39, 41);
+}
+.lnavSign {
+  width: 50%;
+  display: flex;
+}
+.lnavSign > div {
+  width: 33.33%;
+}
+.lnavSign div > span {
+  font-weight: bold;
+}
+
+
+.lnavSign + div {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.lnavSign + div > div {
+  margin-right: 15px;
+}
+.navBellN {
+}
+.navlDropDown {
+}
+.navlDropDown + div {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navlDropDown + div img {
+  width: 20px;
+  margin-right:10px;
+}
+/* ------ */
+.navLangDrop2 {
+  display: none;
+}
+
+
+/* now managment of the responsive */
+@media screen and (max-width: 901px){
+  .navCollapse {  
+    display: none;
+  }
+  .lnavWhite {
+    display: none;
+  }
+  .navRemains {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* position:absolute; */
+    left: 0px;
+    top:0px;
+    width: 100%;
+    color:white;
+    background-color: #25282A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .navDropDown {
+    overflow: hidden;
+    padding-left: 7px;
+    display: flex;
+    flex-direction: column;
+    background-color: #25282A;
+    width: 98.5%;
+    color:white;
+    transition: height 0.4s, padding-top 0.4s;  
+  }
+  .navDropDown > div {
+    padding: 15px;
+    padding-left: 0px;
+    border-bottom:solid white 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navDropDown .navDt {
+    justify-content: center;
+    width: 95%;
+    text-align: justify;
+  }
+  .navDropDown img {
+    width: 15px;
+  }
+
+  /* navbar element */
+  .navMenuButton {
+    width:20%;
+  }
+  .navLogo2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navLogo2 img {
+    width: 140px
+  }
+  .navBar2right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 501px){ 
+    .navLogo2 img{
+      width: 100px;  
+    }
+  }
+}

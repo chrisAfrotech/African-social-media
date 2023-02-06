@@ -1,0 +1,88 @@
+.publiList div {
+    box-sizing: border-box;
+}
+.publiList {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F0F2F5;
+    background-color: rgb(240, 240, 241);
+    padding-top: 52px;
+    border-top: solid 1px silver;
+}
+.pBLTitle {
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.pBLSelection1 {
+    padding-top: 20px;
+    padding-left: 2%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; justify-content: flex-start; align-items: center;
+   background-color:white;
+}
+.pBLSelection1 > span {
+    margin-right: 10px;
+}
+
+.pBLSelection2 {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    padding-top: 20px;
+    background-color: white;
+}
+.pBLSelection2 > div {
+    border: solid 1px rgb(210, 210, 210);
+    border-radius: 3em;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 150px;
+    padding-top:10px ;
+    padding-bottom:10px;
+    cursor: pointer;
+}
+
+.pBLPublication {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+}
+.pBLPublication > div {
+    padding-top: 20px;
+    width: 100%;
+}
+.pBLLPagination {
+    display: flex; justify-content: center; align-items: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ------ responsive ------- */
+@media screen and (max-width: 700px) {
+    .pBLSelection2 {
+        display: flex; justify-content: center;align-items: center;
+    }
+    .pBLSelection2 > div {
+        font-size: 13px;
+        width: 135px;
+    }
+}

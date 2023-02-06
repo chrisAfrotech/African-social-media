@@ -1,0 +1,141 @@
+.lovComment {
+  width: 100%;
+  overflow: hidden;
+  color: rgb(40, 40, 40);
+  font-size: 15px;
+  position: relative;
+  border: solid 1px rgb(210, 210, 210);
+  border-radius: 1em;
+  padding: 5px;
+}
+.lovCommentImg {
+  overflow: hidden;
+}
+.lovCommentImg img {
+  width: 100%;
+  transition: transform 1s;
+}
+.lovCommentAuthor {
+  display: flex;
+}
+.lovCommentAuthor > div {
+  width: 50%;
+}
+.lovCommentDate {
+  padding-left: 3%;
+  font-size: 11px;
+  text-align: left;
+  line-height: 17px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.lovCommentDate span {
+  color: #E32D38;
+  font-weight: bold;
+}
+.lovCommentProfile {
+  display: flex; justify-content: flex-end; align-items: center;
+}
+.lovCommentProfile > div{
+  width: 35px;
+  height: 35px;
+  border-radius: 10em;
+  box-sizing: content-box;
+  display: flex; justify-content: center; align-items: center;
+  overflow: hidden;
+}
+.lovCommentProfile img {
+  height: 100%;
+}
+
+
+.lovCommentText {
+  box-sizing: border-box;
+  padding-left: 3%;
+  padding-right:20px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  transition: max-height 0.5s;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+}
+.lovCommentMore {
+  display: flex;
+  padding-left: 3%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.lovCommentOption  {
+  display: flex;
+  font-size: 13px;
+  padding: 5px;
+}
+.lovCommentOption > div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 2px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.lovCommentPoint {
+  justify-content: flex-start;
+}
+.lovCommentPoint +div {
+  justify-content: flex-end;
+}
+.lovCommentPointt {
+  border: solid 1px #cacacc;
+  border-radius: 1em;
+  padding: 4px;
+}
+.lovCommentPoint +div + div {
+  justify-content: flex-end
+}
+.lovCommentPoint div {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lovCommentPoint img {
+  width: 20px;
+  margin-right: 6px;
+}
+.lovCommentPlus {
+  justify-content: right;
+}
+
+
+
+/* hover effects ---------------------- */
+.lovCommentPoint img:hover {
+  border-radius: 0.1em;
+  box-shadow: 0px 0px 5px silver;
+}
+.lovCommentPoint span:hover {
+  color:#E32D38;
+}
+
+.lovCommentPoint:hover, .lovCommentPlus:hover, .lovCommentMore:hover, .lovCommentText:hover, .lovCommentDate:hover {
+  cursor: pointer;
+}
+
+
+/*----- responsive managment zone... ------------------ */
+@media screen and (max-width: 700px) {
+  .lovCommentDate {
+    font-size: 11px;
+  }
+  .lovCommentText {
+    width: 100%;
+    font-size: 16px;
+  }
+  .lovCommentOption  {
+    font-size: 12px;
+  }
+}

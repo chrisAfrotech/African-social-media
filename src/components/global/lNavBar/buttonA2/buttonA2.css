@@ -1,0 +1,23 @@
+.ButtonA2 {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.1vw;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color:transparent;
+  border-radius: 0.2em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.ButtonA2:hover {
+background-color: #FF6A39
+}
+.ButtonA2 div {
+  font-size: 18px;
+}

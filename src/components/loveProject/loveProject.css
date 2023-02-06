@@ -1,0 +1,133 @@
+.main {
+    position:absolute;
+    left: 0px;
+    top:0px;
+    width: 100%;
+}
+.main div {
+    box-sizing: border-box;
+}
+.publish {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publish > div {
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 0.3em;
+    background-color: #E32D38;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background-color 0.2s;
+    margin: 0px;
+}
+h2 {
+    background-color: #0C1B23;
+    text-align: justify;
+    padding: 20px;
+    margin: 0px;
+    background-color: white;
+}
+.pubClass {
+    background-color: #F5F5F6;
+    padding: 2%;
+}
+.publications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F6;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publications > div {
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.sliderClass {
+    margin-top: 10px;
+    max-width: 100%;
+    padding-top: 10px;  
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-bottom: solid 1px rgb(219, 219, 219);
+}
+.seeAll {
+    position: absolute;
+    left:1%;
+    color:red;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* --------- second zoe ----------------------------- */
+.secondZone {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.secondFirst {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+}
+.secondFirst + div {
+    width: 28%;
+}
+.secondVoid {
+    height: 0px;
+}
+
+.prefooter1 {
+    height: 50px;
+    background-color: white;
+}
+
+/* ---- hover ------------ */
+.publish > div:hover {
+    background-color: #92D1D3; 
+    color:#182c38;
+    border-color: #92D1D3;
+    cursor: pointer;
+  }
+
+/*----- responsive managment zone... ------------------ */
+@media screen and (max-width: 1100px) { 
+    .secondZone {
+        flex-direction: column ;
+    }
+    .secondZone > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .publish {
+        font-size: 12px;
+    }
+    .pubClass {
+        padding: 0px;
+    }
+    .publications {
+        padding: 0px;
+    }
+    .publications > div {
+        width: 100%;
+        padding: 0px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}

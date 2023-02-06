@@ -1,0 +1,139 @@
+.bestStat {
+    width: 100%;
+    font-size: 15px;
+}
+.bsHeader {
+    background-color:#E32D38;
+    font-size: 27px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+.bsBlueBand {
+    height: 55px;
+    background-color: #2057AA;
+    display: flex;
+    margin-bottom: 10px;
+}
+.bsBlueBand1{
+    background-color: #0077C8;
+    width: 70%;
+}
+.bsBlueBand1 +div {
+    width: 30%;
+}
+.bsYellowBand {
+    height: 55px;
+    width: 40%;
+    background-color: #F6BE0D;
+    margin-bottom: 10px;
+}
+.bsWinner {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.bsBody {
+    display: flex;
+    flex-direction: column;
+  /*  background-color: #254150; */
+    background-color: rgb(227, 45, 56,0.5);
+    padding: 1%;
+    display: flex;
+}
+.bsUseless {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    color: black;
+}
+.bsLogo {
+    width: 60%;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 20px;
+    font-size: 17px;
+}
+.bsThreeButton {
+    display: flex;
+}
+.bsThreeButton > div {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.bsTFirst {
+    background-color: #E32D38;
+    border: solid 1px #E32D38;  
+}
+.bsTFirst + div {
+    border: solid 1px white;
+}
+.bsTFirst + div + div {
+    border: solid 1px white;
+}
+
+.bsStats {
+    box-sizing: border-box;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bsStats  > div {
+    margin: 1.5%;
+    width: 33.33%;
+}
+
+.bsBottom {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* hover fucking effects */
+.bsTFirst {
+    cursor: pointer;
+}
+.bsTFirst + div:hover {
+    background-color: #0077C8;
+    border-color: #0077C8;
+    cursor:pointer;
+}
+.bsTFirst + div + div:hover {
+    background-color: #00BF88;
+    border-color: #00BF88;
+    cursor: pointer;
+}
+
+
+/*----- responsive managment zone... ------------------ */
+@media screen and (max-width: 800px) { 
+    .bsUseless {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .bsLogo {
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .bsStats {
+        flex-direction: column;
+        padding: 2%;
+    }
+    .bsStats > div {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

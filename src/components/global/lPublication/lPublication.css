@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'designGraffitiCMS';
+  src: url('~@/assets/fonts/design.graffiti.comicsansms.ttf');
+}
+.lPublication {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  color: rgb(40, 40, 40);
+  font-size: 15px;
+  position: relative;
+}
+.lPType {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 13px;
+  margin: 5px;
+  background-color: rgb(227, 45, 56,0.5);
+  color:white;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.lPImg {
+  overflow: hidden;
+}
+.lPImg img {
+  width: 100%;
+}
+.lPDate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3%;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: left;
+  margin-top: 10px;
+}
+.lPProfile {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 7em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+.lPProfile img {
+  height: 95%;
+}
+.lPAuthor {
+  padding-left: 10px;
+}
+.lPDate span {
+  color: #E32D38;
+  font-weight: bold;
+}
+.lPStars {  
+  display: flex;
+}
+.lPStars > div {
+  margin-right: 3px;
+}
+.lPTitle {
+  width: 90%; 
+  padding-left: 3%;
+  padding-right: 4%;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 7px;
+  margin-bottom: 2px;
+  line-height: 25px;
+  color: rgb(40,40, 40); /*rgb(90,90, 90); */
+  font-weight: bold;
+}
+.lPText {
+  padding-left: 3%;
+  padding-right: 4%;
+  text-align: left;
+  line-height: 23px;
+  font-size: 16px;
+  width: 95%;
+  transition: max-height 0.5s;
+  overflow-y: hidden;
+  color: rgb(40,40, 40);
+  white-space: pre-wrap;
+}
+.lPMore {
+  padding-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.lPOption  {
+  display: flex;
+  font-size: 13px;
+  padding: 5px;
+}
+.lPOption > div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 2px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+.lPPoint {
+  justify-content: left;
+}
+.lPPoint + div {
+  justify-content: flex-end;
+
+}
+.lPPointt {
+  border: solid 1px silver;
+  border-radius: 1em;
+  padding: 4px;
+}
+.lPPoint div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lPPoint img {
+  width: 20px;
+  margin-right: 6px;
+  opacity: 0.9;
+}
+.lPPlus {
+  justify-content: right;
+}
+
+
+
+
+/* hover effects ---------------------- */
+.lPPoint img:hover {
+  border-radius: 0.1em;
+  box-shadow: 0px 0px 5px silver;
+}.lPPoint span:hover {
+  color:#E32D38;
+}
+
+.lPPoint:hover, .lPPlus:hover, .lPMore:hover, .lPText:hover, .lPDate:hover {
+  cursor: pointer;
+}
+
+
+/*----- responsive managment zone... ------------------ */
+@media screen and (max-width: 700px) {
+  .lPType {
+    padding: 2px;
+  }
+  .lPDate {
+    font-size: 10px;
+  }
+  .lPTitle {
+    width: 90%;
+    font-size: 16px;
+  }
+  .lPText {
+    width: 100%;
+    font-size: 16px;
+  }
+  .lPOption  {
+    font-size: 12px;
+  }
+}

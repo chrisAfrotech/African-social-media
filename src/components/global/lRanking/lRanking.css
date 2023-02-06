@@ -1,0 +1,140 @@
+.lRanking {
+width: 100%;
+box-sizing: border-box;
+background-color: #0B1216;
+font-size: 13px;
+color:white;
+display: flex;
+flex-direction: column;
+padding: 15px;
+}
+.lraHeader {
+}
+.lraHeaderH {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.lraOption {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.lraOption > div {
+  width: 33.333%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.lraTotal {
+  background-color: #E32D38;
+  border: solid 1px #E32D38;
+}
+.lraTotal + div {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: solid 1px ;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lraSelect {
+  width: 80%;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color:white;
+  appearance: none;
+  background-image: url('./loupe.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20%;
+}
+.lraSelect::-ms-expand {
+  display: none;
+}
+.lraTotal + div img {
+  width: 18px;  
+}
+.lraTotal + div + div {
+  border: solid 1px white
+}
+
+#lraInfo {
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:white;
+  font-size:13px;
+}
+#lraInfoName {
+  color:white;
+}
+#lraInfoPoint {
+  font-size:13px;
+}
+
+.lraElements {
+}
+.lraElement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 10px;
+  color: rgb(254, 249, 206);
+  border-left: solid 6px transparent;
+}
+.lraRanking {
+  padding-left:10px ;
+  margin-right:25px ;
+  font-size: 13px;
+}
+.lraRanking + div{
+  margin-right: 25px;
+  height: 24px;
+  min-width: 24px;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: 10em;
+  overflow: hidden;
+}
+.lraRanking + div img {
+  height: 100%;
+}
+.lraRanking + div +div   {
+  width: 100%;
+  color: #92D1D3; 
+  text-align: left; 
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 15px;
+} 
+.lraRanking + div +div +div {
+  padding-right: 20px;
+  font-size: 14px;
+}
+.lraRanking + div +div +div+div{
+  padding-right: 5px;
+}
+.lraMore {
+  color: #92D1D3; 
+  border:solid 1px;
+  font-size: 13px;
+  padding: 11px;
+  margin-top: 15px;
+  border-radius: 0.3em;
+  background-color: #0C1B23;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+/* on hover */
+.lraProfileShadow:hover {
+  background-color: rgba(50,50,50, 0.4);
+  cursor: pointer;
+}
+.lraMore:hover {
+  background-color: #92D1D3; 
+  color:#182c38;
+  border-color: #92D1D3;
+  cursor: pointer;
+}

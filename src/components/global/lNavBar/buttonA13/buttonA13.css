@@ -1,0 +1,25 @@
+.ButtonA13 {
+  display: flex;
+  justify-content:left;
+  align-items:center;
+  box-sizing:border-box;
+  background-color:transparent;
+  border-radius: 0.3em;
+  border: none;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.ButtonA13:hover {
+  color:#EB951E;
+}
+.ButtonA13 span {
+  padding: 7px;
+  padding-bottom: 9px;
+}
+.ButtonA13 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

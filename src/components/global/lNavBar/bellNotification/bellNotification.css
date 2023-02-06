@@ -1,0 +1,185 @@
+.bellNotification {
+  left: 300px;
+}
+
+.bellNotification a{
+    text-decoration: none;
+    color: black;
+  }
+  
+.bellNotification  a:visited{
+    color: black;
+  } 
+.bellNotification  header{
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    vertical-align: middle;
+  }
+  
+.bellNotification  .icons{
+    display: inline;
+    float: right
+  }
+  .bellNotification  .notification {
+    position: relative;
+  }
+  .BNbell {
+    position: relative;
+  }
+  .BNbell img {
+    width: 25px;
+  }
+  .bellNotification .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17px;
+    width:  17px;
+    font-size: 11px;
+    padding: 4px;
+    background-color: #E32D38;
+    border-radius: 4em;
+    color: white;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    right: -5px;
+    top:0px
+  }
+  
+  .bellNotification .notBtn{
+    transition: 0.5s;
+    cursor: pointer
+  }
+  
+  .bellNotification  .fas{
+  }
+  
+  .bellNotification .box{
+    width: 400px;
+    height: 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+    position: absolute;
+    right: 0px;
+    overflow-y: scroll;
+    padding: 0px;
+    margin-top: 5px;
+    background-color: #F4F4F4;
+    -webkit-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.1);
+    cursor: context-menu;
+  }
+  
+.bellNotification  .fas:hover {
+  color: #d63031;
+}
+  
+.bellNotification  .notBtn:hover > .box{
+    height: 60vh
+  }
+  
+.bellNotification  .content{
+    padding: 2%;
+    color: black;
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+.bellNotification  .gry{
+    background-color: #F4F4F4;
+  }
+  
+.bellNotification  .top{
+    color: black;
+    padding: 1%
+  }
+  
+.bellNotification  .display{
+    position: relative;
+}
+  
+.bellNotification  .cont{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4F4;
+  }
+  
+  .bellNotification  .cont:empty{
+    display: none;
+  }
+  
+  .bellNotification  .stick{
+    text-align: center;  
+    display: block;
+    font-size: 50pt;
+  }
+  
+  .bellNotification  .stick:hover{
+    color: black;
+  }
+  
+  .bellNotification  .cent{
+    text-align: center;
+    display: block;
+  }
+  
+  .bellNotification  .sec{
+    padding: 25px 10px;
+    background-color: #F4F4F4;
+    transition: 0.5s;
+  }
+  
+  .bellNotification .profCont{
+    padding-left: 15px;
+  }
+  
+  .bellNotification  .profile{
+    border-radius: 5em;
+    width: 75px;
+    float: left;
+  }
+  
+  .bellNotification .txt{
+    vertical-align: top;
+    font-size: 1.25rem;
+    padding: 5px 10px 0px 115px;
+  }
+  
+  .bellNotification .sub{
+    font-size: 1rem;
+    color: grey;
+  }
+  
+  .bellNotification .new{
+    border-style: none none solid none;
+    border-color: red;
+  }
+  
+  .bellNotification .sec:hover{
+    background-color: #BFBFBF;
+  }
+  
+  
+  @media screen and (max-width: 501px){ 
+    .BNbell img {
+      width: 19px;
+    }
+    .bellNotification .number{
+      height: 14px;
+      width:  14px; 
+    }
+    .bellNotification .box {
+      width: 270px;
+    }
+    .bellNotification .txt{
+      font-size: 1.0rem;
+      padding: 5px 10px 0px 70px;
+    }
+    .bellNotification .sub{
+      font-size: 0.75rem;
+    }
+  }

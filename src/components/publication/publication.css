@@ -1,0 +1,254 @@
+.publication {
+    position: absolute;
+    width: 100%;
+    top:0px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(229, 229, 230);
+    color: rgb(40, 40, 40);
+    padding-top: 105px;
+}
+.publication div {
+    box-sizing: border-box;
+}
+.pBody {
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F5F5F6;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.pBody > div{
+}
+.pInfo {
+}
+.pPubTypeOfPub {
+    padding: 5px;
+    background-color: rgba(36, 39, 41, 0.808);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.pImage img {
+    width: 100%;
+}
+.pTitle {
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 2%;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+}
+.pText {
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 2%;
+    padding-top: 0px;
+    padding-top: 10px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.pAuthor {
+    border-bottom: solid 1px rgb(210, 210, 210);
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-right: 4%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: none;
+    background-color: white;
+    color: rgb(80, 80, 80);
+}
+.pBy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pProfile {
+    width: 50px;
+    height: 50px;
+    border-radius:10em;
+    overflow: hidden;
+    box-shadow: 0px 0px 1px gray;
+    background-color: silver;
+    display: flex; justify-content: center; align-items: center;
+}
+.pProfile img {
+    height: 100%;
+    background-color: gray;
+}
+.pNameZone {
+    margin-right: 10px;
+}
+/* @font-face {
+    font-family: 'gooddp';
+    src: url('./font/MrDeHaviland-Regular.ttf');
+} */
+.pAthName {
+    font-family: 'gooddp';
+    font-weight: bold;
+    font-size: 12px;
+}
+.pDate {
+    font-size: 11px;
+}
+
+/*----- second row ----------------*/
+.pStats {
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(210, 210, 210);
+    background-color: white;
+}
+.pStatsFirst {
+    display: flex;
+    padding-top: 0px;
+    font-size: 12px;
+}
+.pReactLogo {
+    width: 50%;
+    text-align: left;
+    display: flex; justify-content: center; align-items: center;
+    padding: 5px;
+    border-radius: 5em;
+    margin: 5px;
+    margin-left:0px;
+    border: solid 1px rgb(210, 210, 210);
+}
+.pReactLogo div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right:10px;
+    cursor: pointer;
+}
+.pReactLogo span {
+    cursor: pointer;
+}
+.pReactLogo img {
+    width: 20px;
+}
+
+.pReactLogo + div {
+    display: flex; justify-content: center; align-items: center;
+    padding: 5px;
+    border: solid 1px rgb(210, 210, 210);
+    border-radius: 5em;
+    margin: 5px;
+    margin-right: 0px;
+    text-align: right;
+    width: 50%;
+}
+.pReactLogo + div div {
+    margin-right: 10px;
+}
+.pReactLogo + div img {
+    width: 20px;
+}
+
+.pStatsFirst + div + div {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.debateWinner {
+    width: 70px;
+    position: relative;
+}
+.debateWinnerImage {
+    border-radius: 5em;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    overflow: hidden;
+}
+.debateWinnerImage img {
+    width: 85%;
+}
+.debateWinnerImage + div {
+    position: absolute;
+    width: 30px;
+    border-radius: 1em;
+    background-color: silver;
+    font-size: 13px;
+    left: 100%;
+    top:0%;
+    margin-left: -29px;
+}
+.debateWinnerImage + div + div {
+    position: absolute;
+    width:28px;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+.debateWinnerImage + div + div img {
+    width:100%;
+}
+
+/* ---- third part --------- */
+.pCom {
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.pComHighlight {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pSort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.pSort > div {
+    box-sizing: border-box;
+    margin-left:10px ;
+    margin-right:10px ;
+}
+.pCommentZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pCommentZone > div {
+    margin: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .publication {
+        padding-top: 50px;
+    }
+}

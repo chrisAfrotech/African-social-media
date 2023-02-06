@@ -1,0 +1,97 @@
+.pComment {
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    max-width: 800px;
+    width: 100%;
+    bottom: 250px;
+    box-sizing: border-box;
+}
+.pCommentBody {
+    width: 100%;
+    max-height: 400px;
+    overflow: auto;
+}
+.pCTitle {
+    font-weight: bold;
+    background-color: rgba(40, 40, 40, 0.8);
+    font-size: 15px;
+    padding: 5px;
+    position: relative;
+    color: white ;
+}
+.pCCross {
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    right: 0%;  
+    top: 50%;
+    margin-right: 10px;
+    margin-top: -12px;
+    border-radius: 5em;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pCCross img {
+    width: 55%;
+}
+.pCContainerImg {
+    display: flex; justify-content: center; align-items: center;
+}
+.pCContainerImg img{
+    max-width: 100%;
+}
+
+
+/* --------- comment input area ---------------- */
+.pCommentCom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0px;
+    box-sizing: border-box;
+    background-color: rgb(245,245,245);
+}
+.pCommentCom div {
+    margin: 5px;
+    margin-left:10px ;
+    margin-right:10px ;
+    box-sizing: border-box;
+}
+.pCPin img {
+    width: 20px
+}
+.pCPin input {
+    display: none;
+}
+.pCPin + div {
+    width: 100%;
+}
+.pCPin + div textarea {
+    border: none;
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245,245,245);
+    resize: none;
+}
+.pCPin + div + div img  {
+    width: 25px;
+}
+
+
+/* * hover effect*/
+.pCCross:hover {
+    background-color: gray;
+}
+.pComment img:hover {
+    cursor: pointer;
+}

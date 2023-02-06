@@ -1,0 +1,127 @@
+.listReactor {
+  position: fixed;
+  left:50%;
+  top: 50%;
+  width: 400px;
+  height: 480px;
+  margin-top: -240px;
+  margin-left: -200px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  overflow-y: auto;
+  overflow-x:hidden ;
+  display: none;
+}
+.lrCTitle {
+  font-weight: bold;
+  font-size: 19px;
+  padding: 20px;
+  position: relative;
+  color: white;
+  border-bottom: solid 1px gray;
+  background-color: #25282A;
+}
+.lrCCross {
+  position:absolute;
+  width: 32px;
+  height: 32px;
+  right: 0%;  
+  top: 50%;
+  margin-right: 10px;
+  margin-top: -15px;
+  border-radius: 5em;
+  background-color: rgb(211, 211, 211,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.lrCCross img {
+  width: 55%;
+}
+
+.lrHeader {
+  background-color: #25282A;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lrHeader > div {
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:10px ;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+.lrHeader > div img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.lrArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.lrArrow img {
+  width: 20px;
+}
+.lrArrow1 img {
+  transform: rotate(180deg);
+  margin-right:0px;
+}
+
+.lrElement {
+  border-bottom: solid 1px silver;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding: 10px;
+  font-size: 13px;
+}
+.lrElement div {
+  margin-left:10px;
+  margin-right:10px;
+}
+.lrProfile img {
+  width: 35px;
+}
+.lrName {
+  width: 100%;
+  text-align: left;
+}
+.lrReaction img {
+  width: 25px;
+}
+
+
+
+/* ------------------- hover effects-----------------------------n*/
+
+.lrHeader > div:hover   {
+  background-color: white;
+  cursor:pointer;
+  color: #25282A;
+}
+.lrElement:hover {
+  background-color: rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+
+/* --------------- responsive management ------------ */
+
+@media screen and (max-width: 450px){
+  .listReactor {
+    width: 290px;
+    margin-left: -145px;
+  }
+}
